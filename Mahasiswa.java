@@ -13,22 +13,21 @@ public class Mahasiswa {
     private String name,jurusan;
     private int nim, semester; 
     private double ipk;
-    Mahasiswa (){
+    
+    public Mahasiswa (){
         
     }
     
-    Mahasiswa (int nim,String name){
+    public Mahasiswa (int nim,String name){
         this.nim = nim;
         this.name = name;
     }
 
-    private Mahasiswa method() {
-        return this;
-    }
-  Mahasiswa (int nim, String name, String jurusan, int semester, double ipk){
-        method().name = name;
-        method().ipk = ipk;
-        method().nim = nim;
+   
+  public Mahasiswa (int nim, String name, String jurusan, int semester, double ipk){
+        this.name = name;
+        this.ipk = ipk;
+        this.nim = nim;
         this.jurusan = jurusan;
         this.semester = semester;
             
@@ -92,12 +91,12 @@ public class Mahasiswa {
         System.out.println("Semester: " +semester);
         System.out.println("IPK: " +ipk);
     }
-Boolean isLulus(){
+    public boolean isLulus(){
     return ipk >= 3.0;
 }
     
 
-    void naikSemester() {
+    public void naikSemester() {
         if (semester < 8) {
         semester++;
     }
