@@ -10,8 +10,10 @@ package com.mycompany.uts_pbo_kelompok_3;
  */
 public class Mahasiswa {
    
-    private String name,jurusan;
-    private int nim, semester; 
+    private String name;
+    private String jurusan;
+    private int nim; 
+    private int semester;
     private double ipk;
     
     public Mahasiswa (){
@@ -40,8 +42,7 @@ public class Mahasiswa {
 
     public void setName(String name) {
         if (name != null && !name.isEmpty()) {
-            
-        this.name = name;
+            this.name = name;
         }
     }
 
@@ -60,7 +61,7 @@ public class Mahasiswa {
     }
 
     public void setNim(int nim) {
-         if (nim > 0 && nim <= 300){
+         if (nim > 0){
         this.nim = nim;
         }
     }
@@ -70,9 +71,9 @@ public class Mahasiswa {
     }
 
     public void setSemester(int semester) {
-         if (semester > 0 && semester <= 8){
+         if (semester > 0 && semester <= 8)
         this.semester = semester;
-         }
+         
     }
 
     public double getIpk() {
@@ -80,16 +81,16 @@ public class Mahasiswa {
     }
 
     public void setIpk(double ipk) {
-         if (ipk > 0 && ipk <= 4.00){
+         if (ipk >= 0 && ipk <= 4.00)
         this.ipk = ipk;
-         }
+         
     }
     public void tampilkanData(){
-        System.out.println("NIM :" + nim);
-        System.out.println("Nama: " +name);
-        System.out.println("Jurusan: " +jurusan);
+        System.out.println("NIM     : " + nim);
+        System.out.println("Nama    : " +name);
+        System.out.println("Jurusan : " +jurusan);
         System.out.println("Semester: " +semester);
-        System.out.println("IPK: " +ipk);
+        System.out.println("IPK     : " +ipk);
     }
     public boolean isLulus(){
     return ipk >= 3.0;
@@ -101,6 +102,8 @@ public class Mahasiswa {
         semester++;
     }
     }
+
+    
     
 }
 
