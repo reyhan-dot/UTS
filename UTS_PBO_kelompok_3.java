@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package com.mycompany.uts_pbo_kelompok_3;
+package com.mycompany.uts_pbo_kelompok_4;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author ACER
  */
-public class UTS_PBO_kelompok_3 {
+public class UTS_PBO_kelompok_4 {
 
     
 
