@@ -57,7 +57,7 @@ public class UTS_PBO_kelompok_3 {
                             int semester = scanner.nextInt();
                             
                             System.out.print("Masukkan IPK: ");
-                            double ipk = Double.parseDouble(scanner.nextLine());
+                            double ipk = scanner.nextDouoble();
                             
                             daftarMhs[jumlah++] = new Mahasiswa(nim, name, jurusan, semester, ipk);
                             
